@@ -5,7 +5,7 @@ category: "[[10_Wiki/🤖 Agents]]"
 confidence_score: 1.0
 tags: [agent, lofi, troubleshooting, hallucination, prompt-engineering, music-generation]
 last_reinforced: 2026-04-22
-github_commit: "pending"
+github_commit: "b51c206"
 ---
 
 # [[로파이 에이전트 커버 이미지 및 규칙 위반 에러 분석]]

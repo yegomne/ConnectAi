@@ -5,7 +5,7 @@ category: "[[10_Wiki/🛠️ Projects]]"
 confidence_score: 1.0
 tags: [project, taskjelly, audio, troubleshooting, python, wav, DOMException]
 last_reinforced: 2026-04-22
-github_commit: "pending"
+github_commit: "2f3f018"
 ---
 
 # [[TaskJelly 사운드 트러블슈팅 (DOMException 및 파이썬 파형 합성)]]
