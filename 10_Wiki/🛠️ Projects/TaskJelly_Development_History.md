@@ -4,7 +4,7 @@ aliases: [TaskJelly 개발 로그, 젤리바 히스토리, 글래스모피즘 UI
 category: "[[10_Wiki/🛠️ Projects]]"
 confidence_score: 1.0
 tags: [project, taskjelly, react, zustand, glassmorphism, UI]
-last_reinforced: 2026-04-21
+last_reinforced: 2026-04-22
 github_commit: "pending"
 ---
 
@@ -23,6 +23,9 @@ github_commit: "pending"
   5. **물리적 드래그 앤 드롭 (D&D):** `@dnd-kit/core` 적용. `PointerSensor`의 `activationConstraint: { distance: 5 }` 옵션 설정으로 타이머 켤 때의 클릭(Touch) 이벤트 충돌을 우아하게 우회하고, CSS `touch-action: none;`으로 모바일 스와이프 시 뷰포트가 스크롤되는 불쾌한 버그 완벽 통제.
   6. **TypeScript 런타임 보호:** 타임아웃 이벤트 타입 지정(`ReturnType<typeof setTimeout>`), `import type` 분리 적용 및 모든 암묵적 `any` 변수 제거 등 엄격 룰셋(Strict Type) 준수를 통해 빈 화면(White Screen) 및 빌드 에러 원천 해결 (에러 잔존율 0%).
   7. **도파민 성취 보상 시스템 (`DailyGauge.tsx`):** Task 완료(`TimerStore`의 `finish`) 시 상태를 `memory`로 갱신하여 메인 뷰에서 분리시키고, `@react-spring/web`과 `canvas-confetti`를 결합해 게이지 카운팅 및 화면 하단의 5색 파스텔 톤 폭죽이 터지는 즉각적인 시각적 쾌감을 제공.
+  8. **렌더링 안정성 (Color Collisions):** 인접 컴포넌트 간 색상 중복을 방지하기 위해 해싱 대신 배열 `index` 기반 순차 할당 로직 적용.
+  9. **UI 디테일 및 미니 그래프:** flex item 삐져나옴 버그 수정(`min-width: 0`), 심리적 안정감을 주는 Mint Green 색상의 반복 업무용 시간 시각화 얇은 미니 그래프 추가.
+  10. **Design System 이식 (Recurring Widget):** 부분적인 다크모드 코드 잔재로 인한 '투명 인간' 가독성 버그를 해결. 컴포넌트 독립 디자인 대신 주변 UI 컬러코드와 테마를 완벽히 동기화.
 
 ## ⚠️ 모순 및 업데이트 (Contradictions & RL Update)
 - **과거 데이터와의 충돌 (디자인 수정):** 유리의 불투명도가 높아(Opacity Fail) 뒷배경이 비치지 않는 '플라스틱 질감' 문제가 있었습니다. 이를 `rgba(0.45 ~ 0.55)` 하향, `backdrop-filter: blur(18px) saturate(130%)` 적용, 그리고 굵은 외부 반사광 테두리(`1.5px solid rgba(255, 255, 255, 0.6)`) 적용을 통해 완벽히 극복했습니다.
@@ -31,6 +34,7 @@ github_commit: "pending"
   2. **인터랙션(UX)의 충돌 처리:** 드래그 컴포넌트(D&D) 안에서 클릭 이벤트(타이머 실행 등)가 발생할 경우, 드래그 활성화에 최소 이동 거리(`distance`) 제약을 두어 터치와 스와이프를 분리.
   3. **타입 안전성 (Type Safety):** 런타임 버그 방지를 위해 동적 변수에 `any` 사용을 금지하며 명시된 TypeScript 시그니처만 사용함을 지식 베이스에 각인 🧠.
   4. **도파민 주도 UX (Dopamine-Driven Experience):** 아무리 작은 Task라도 수행 완료 시 즉각적이고 강렬한 시각적 피드백(폭죽, 게이지)을 제공하여 사용자의 다음 행동을 유도하는 보상 회로 패턴을 UI/UX 핵심 정책으로 채택함.
+  5. **맥락 기반 테마 통일성 (Context-Aware UI):** 신규 기능 추가 시 독자적인 스타일링을 배제하고, 무조건 기존 앱의 Design System(밝은 파스텔톤/글래스모피즘) 컬러 코드를 우선 이식하는 정책으로 업데이트 🧠.
 
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[TaskJelly_Project]]
