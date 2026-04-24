@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b12b757427b5a673",
+        "id": "b17c3fc843a16e26",
         "type": "tabs",
         "children": [
           {
-            "id": "2ae3f5bee061ef9a",
+            "id": "ccf20fc88a4ca492",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,10 +176,11 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "2ae3f5bee061ef9a",
+  "active": "ccf20fc88a4ca492",
   "lastOpenFiles": [
-    "10_Wiki/🛠️ Projects/YegomCapture_Development_History.md",
+    "00_Raw/sehyun.md",
     "00_Raw/yegomcapturefix.md",
+    "10_Wiki/🛠️ Projects/YegomCapture_Development_History.md",
     "temp.py",
     "00_Raw/로파이에이전트.md",
     "10_Wiki/🤖 Agents/Lofi_Error_Troubleshooting.md",
@@ -208,7 +209,6 @@
     "20_Meta/Policy.md",
     "10_Wiki/⚖️ Decisions/MatterJelly_Failure_Log.md",
     "00_Raw/Jelly_Error_Log.md",
-    "10_Wiki/🛠️ Projects/Projects_Index.md",
-    "10_Wiki/🚀 Skills/Skills_Index.md"
+    "10_Wiki/🛠️ Projects/Projects_Index.md"
   ]
 }

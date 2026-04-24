@@ -5,7 +5,7 @@ category: "[[10_Wiki/🛠️ Projects]]"
 confidence_score: 1.0
 tags: [project, yegomcapture, python, automation, deployment, troubleshooting]
 last_reinforced: 2026-04-24
-github_commit: ""
+github_commit: "1b928e7"
 ---
 
 # [[YegomCapture 개발 히스토리]]
