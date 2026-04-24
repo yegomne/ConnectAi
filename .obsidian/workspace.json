@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3297f24e22732c2e",
+        "id": "b12b757427b5a673",
         "type": "tabs",
         "children": [
           {
-            "id": "7a346561537dc334",
+            "id": "2ae3f5bee061ef9a",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,8 +176,14 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "7a346561537dc334",
+  "active": "2ae3f5bee061ef9a",
   "lastOpenFiles": [
+    "temp.py",
+    "00_Raw/로파이에이전트.md",
+    "10_Wiki/🤖 Agents/Lofi_Error_Troubleshooting.md",
+    "10_Wiki/🤖 Agents",
+    "10_Wiki/🛠️ Projects/TaskJelly_Sound_Troubleshooting.md",
+    "00_Raw/TaskJelly_soundfix.md",
     "10_Wiki/System_Policy/Agent_Rules/A-Wiki_Captain_Policy.md",
     "00_Raw/A-Wiki_Captain_Policy.md",
     "10_Wiki/Troubleshooting/TaskJelly_UI_Readability_Fix.md",
@@ -202,11 +208,6 @@
     "00_Raw/Jelly_Error_Log.md",
     "10_Wiki/🛠️ Projects/Projects_Index.md",
     "10_Wiki/🚀 Skills/Skills_Index.md",
-    "10_Wiki/💡 Topics/Topics_Index.md",
-    "10_Wiki/⚖️ Decisions/Decisions_Index.md",
-    "00_Raw/00_Raw_Index.md",
-    "10_Wiki/🛠️ Projects/README.md",
-    "README.md",
-    "TaskJelly 프로젝트 개발 히스토리 (v1.0 Glassmorphism).md"
+    "10_Wiki/💡 Topics/Topics_Index.md"
   ]
 }
