@@ -5,7 +5,7 @@ category: "[[00_Raw]]"
 confidence_score: 1.0
 tags: [raw_data, brain_dump, sehyun]
 last_reinforced: 2026-04-24
-github_commit: "6ef325a"
+github_commit: "9bf645f"
 ---
 
 # [[Sehyun (대표님 생각 보관소)]]
