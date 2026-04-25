@@ -5,7 +5,7 @@ category: "[[10_Wiki/💡 Topics]]"
 confidence_score: 0.95
 tags: [life_logging, health, adhd, bio_rhythm, productivity]
 last_reinforced: 2026-04-24
-github_commit: "TBD"
+github_commit: "31a40bb"
 ---
 
 # [[라이프 로깅 및 생체 리듬 기반 생산성 최적화 (Life Logging & Bio-Rhythm)]]

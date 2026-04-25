@@ -5,7 +5,7 @@ category: "[[10_Wiki/🛠️ Projects]]"
 confidence_score: 0.98
 tags: [lo_fi, music_generation, notebooklm, rag, troubleshooting, prompt_engineering]
 last_reinforced: 2026-04-24
-github_commit: "TBD"
+github_commit: "31a40bb"
 ---
 
 # [[Lo-fi Agent: NotebookLM 기반 드럼/퍼커션 개입 억제 (RAG)]]

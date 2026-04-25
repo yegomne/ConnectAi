@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b17c3fc843a16e26",
+        "id": "d8c4fcf203453f6b",
         "type": "tabs",
         "children": [
           {
-            "id": "ccf20fc88a4ca492",
+            "id": "f8e990543d9114cf",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "Sehyun (대표님 생각 보관소).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sehyun (대표님 생각 보관소)"
             }
           }
         ]
@@ -176,11 +180,13 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "ccf20fc88a4ca492",
+  "active": "f8e990543d9114cf",
   "lastOpenFiles": [
+    "10_Wiki/💡 Topics/NLP_with_Transformers.md",
+    "Sehyun (대표님 생각 보관소).md",
+    "00_Raw/sehyun.md",
     "10_Wiki/🛠️ Projects/Lofi_Sound_Troubleshooting.md",
     "10_Wiki/💡 Topics/Life_Logging_and_Health.md",
-    "00_Raw/sehyun.md",
     "00_Raw/yegomcapturefix.md",
     "10_Wiki/🛠️ Projects/YegomCapture_Development_History.md",
     "temp.py",
@@ -207,8 +213,6 @@
     "00_Raw/TaskJelly_Development_History.md",
     "10_Wiki/🛠️ Projects 2.md",
     "10_Wiki/🛠️ Projects 1.md",
-    "MatterJelly 물리 젤리바 제작 실패 및 회고.md",
-    "20_Meta/Policy.md",
-    "10_Wiki/⚖️ Decisions/MatterJelly_Failure_Log.md"
+    "MatterJelly 물리 젤리바 제작 실패 및 회고.md"
   ]
 }
