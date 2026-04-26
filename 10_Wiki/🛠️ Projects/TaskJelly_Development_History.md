@@ -3,18 +3,18 @@ id: TASKJELLY-DEV-HISTORY-1.0
 aliases: [TaskJelly 개발 히스토리, TaskJelly Glassmorphism, 젤리바 컴포넌트, 포모도로 상태관리]
 category: "[[10_Wiki/🛠️ Projects]]"
 confidence_score: 1.0
-tags: [project, taskjelly, react, zustand, glassmorphism, dnd-kit, typescript, troubleshooting]
-last_reinforced: 2026-04-24
+tags: [project, taskjelly, react, zustand, glassmorphism, dnd-kit, typescript, troubleshooting, hexagonal-architecture]
+last_reinforced: 2026-04-26
 github_commit: "3c9aea9"
 ---
 
 # [[TaskJelly 개발 히스토리 (v1.0 Glassmorphism)]]
 
 ## 📌 한 줄 통찰 (The Karpathy Summary)
-> Vite+React 기반으로 Zustand 상태 관리, Glassmorphism UI, react-spring 애니메이션, 그리고 dnd-kit을 통합하여 시각적 타격감과 직관성을 극대화한 TaskJelly 프로젝트의 A to Z 구축 기록.
+> Vite+React 기반으로 Zustand 상태 관리, Glassmorphism UI, react-spring 애니메이션, 그리고 dnd-kit을 통합하여 시각적 타격감과 직관성을 극대화하고, 포트 앤 어댑터(Hexagonal) 패턴을 통해 Tauri 데스크탑 환경의 영속적 파일 스토리지를 구축한 TaskJelly 프로젝트의 A to Z 개발 기록.
 
 ## 📖 구조화된 지식 (Synthesized Content)
-- **추출된 패턴:** 상태와 UI의 분리(Zustand), 렌더링 최적화(Index 기반 해싱), 물리 기반 UX(dnd-kit 충돌 제어), 도파민 기반 보상 피드백(비례 보상 및 레이아웃 개선), UI 테마 통일성(명도 대비), StatsWidget 고정 주간 뷰 UX 개선, 헤더 버튼 사이드바 통합 및 스크롤 디버깅.
+- **추출된 패턴:** 상태와 UI의 분리(Zustand), 데이터 접근 계층 추상화(포트 앤 어댑터), 렌더링 최적화(Index 기반 해싱), 물리 기반 UX(dnd-kit 충돌 제어), 도파민 기반 보상 피드백(비례 보상 및 레이아웃 개선), UI 테마 통일성(명도 대비), StatsWidget 고정 주간 뷰 UX 개선, 헤더 버튼 사이드바 통합 및 스크롤 디버깅.
 - **세부 내용:**
   1. **초기 셋업 및 코어 로직:** Vite React 환경에서 `TimerStore.ts`(포모도로 코어)와 `TaskStore.ts`(할일 관리)로 분리된 Zustand 스토어 아키텍처.
   2. **핵심 UI (JellyBar):** 글래스모피즘 기반 입체 알약 형태 구현 (`rgba` 0.45~0.55, `backdrop-filter: blur(18px) saturate(130%)`). 
@@ -29,12 +29,16 @@ github_commit: "3c9aea9"
   9. **UI 가독성 및 테마 통일성:** `RecurringWidget` 내 하드코딩된 다크 테마 색상(흰 글씨/투명 박스)을 제거하고, 메인 폰트(`#334155`) 및 보조 폰트(`#64748b`)를 적용하여 밝은 글래스모피즘 테마와 대비를 맞춤 (`TaskInput.css` 팔레트 재사용).
   10. **일일 도파민 게이지 및 보상 로직 최적화:** 도파민 게이지의 우측 배치 및 시각 효과 강화. `TimerStore.ts`의 완료 점수를 기존 고정 10점에서 `기본 10점 + (설정 시간(분) × 2점)` 비례 보상 시스템으로 개편하여 사용자 성취감을 극대화.
   11. **스크롤바 버그 디버깅:** 최상위 컨테이너 `overflow-x: hidden` 적용 및 우측 통계 패널(`.stats-sidebar`) 내부 달력 요소의 미세한 너비 이탈을 추적하여 가로 스크롤바(슬라이드) 버그를 완전히 박멸.
+  12. **스토리지 포트 및 어댑터 리팩토링 (Hexagonal):** 기존 Zustand `persist` (localStorage 강결합)를 제거하고 비동기 `IAppRepository` 포트 인터페이스를 정의. `@tauri-apps/plugin-store` 기반의 `TauriAppRepository` 어댑터로 구현하여 앱 상태(`AppStateEntity`)를 안전한 로컬 JSON 파일에 영속화하며, 외부 인프라 변경 시에도 도메인 로직을 보호하도록 아키텍처 고도화.
 
 ## ⚠️ 모순 및 업데이트 (Contradictions & RL Update)
-- **과거 데이터와의 충돌:** 초기 불투명도를 너무 높게 잡아 유리의 투과성이 죽는 문제, 랜덤 배정으로 인한 리렌더링 플리커링 등 시각적 피로도 유발 이슈 발견.
+- **과거 데이터와의 충돌:** 
+  1. 초기 불투명도를 너무 높게 잡아 유리의 투과성이 죽는 문제, 랜덤 배정으로 인한 리렌더링 플리커링 등 시각적 피로도 유발 이슈 발견.
+  2. 동기식 `localStorage` 강결합으로 인해 데스크탑 앱(Tauri)으로 확장 시 데이터 유실 위험성 발생.
 - **정책 변화:** 
   1. **Glassmorphism 표준값 도출:** 굴절/반사를 위한 배경 불투명도(0.45~0.55), 블러(18px), 채도(130%), 테두리(1.5px solid rgba(255,255,255,0.6)) 공식화 🧠.
   2. **렌더링 의존성 분리:** 컴포넌트 렌더링 주기와 동적 속성(Color)을 분리하기 위해 철저한 `index` 또는 `hash` 기반의 고정 배정 알고리즘을 UI 표준으로 채택 🧠.
+  3. **데이터 접근 계층 분리:** 모든 외부 스토리지(DB, File System)는 직접 호출하지 않고 '포트 인터페이스'를 통해 결합도를 낮추는 Hexagonal Architecture 패턴을 기본 적용 🧠.
 
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[TaskJelly_Project]]
