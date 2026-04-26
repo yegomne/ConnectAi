@@ -3,7 +3,7 @@ id: TASKJELLY-DEV-HISTORY-1.0
 aliases: [TaskJelly 개발 히스토리, TaskJelly Glassmorphism, 젤리바 컴포넌트, 포모도로 상태관리]
 category: "[[10_Wiki/🛠️ Projects]]"
 confidence_score: 1.0
-tags: [project, taskjelly, react, zustand, glassmorphism, dnd-kit, typescript, troubleshooting, hexagonal-architecture]
+tags: [project, taskjelly, react, zustand, glassmorphism, dnd-kit, typescript, troubleshooting, hexagonal-architecture, automation, ui-ux]
 last_reinforced: 2026-04-26
 github_commit: "3c9aea9"
 ---
@@ -11,10 +11,10 @@ github_commit: "3c9aea9"
 # [[TaskJelly 개발 히스토리 (v1.0 Glassmorphism)]]
 
 ## 📌 한 줄 통찰 (The Karpathy Summary)
-> Vite+React 기반으로 Zustand 상태 관리, Glassmorphism UI, react-spring 애니메이션, 그리고 dnd-kit을 통합하여 시각적 타격감과 직관성을 극대화하고, 포트 앤 어댑터(Hexagonal) 패턴을 통해 Tauri 데스크탑 환경의 영속적 파일 스토리지를 구축한 TaskJelly 프로젝트의 A to Z 개발 기록.
+> Vite+React 기반으로 Zustand 상태 관리, Glassmorphism UI, react-spring 애니메이션, 그리고 dnd-kit을 통합하여 시각적 타격감과 직관성을 극대화하고, 포트 앤 어댑터(Hexagonal) 패턴을 통해 영속적 파일 스토리지를 구축함과 동시에 반복 업무 자동화(Midnight Observer) 로직까지 완비한 TaskJelly 프로젝트의 A to Z 개발 기록.
 
 ## 📖 구조화된 지식 (Synthesized Content)
-- **추출된 패턴:** 상태와 UI의 분리(Zustand), 데이터 접근 계층 추상화(포트 앤 어댑터), 렌더링 최적화(Index 기반 해싱), 물리 기반 UX(dnd-kit 충돌 제어), 도파민 기반 보상 피드백(비례 보상 및 레이아웃 개선), UI 테마 통일성(명도 대비), StatsWidget 고정 주간 뷰 UX 개선, 헤더 버튼 사이드바 통합 및 스크롤 디버깅.
+- **추출된 패턴:** 상태와 UI의 분리(Zustand), 데이터 접근 계층 추상화(포트 앤 어댑터), 백그라운드 자동화(Midnight Observer), 시각적 피드백(Pulse Badge), 렌더링 최적화(Index 기반 해싱), 물리 기반 UX(dnd-kit 충돌 제어), 도파민 기반 보상 피드백(비례 보상 및 레이아웃 개선), UI 테마 통일성(명도 대비), StatsWidget 고정 주간 뷰 UX 개선, 헤더 버튼 사이드바 통합 및 스크롤 디버깅.
 - **세부 내용:**
   1. **초기 셋업 및 코어 로직:** Vite React 환경에서 `TimerStore.ts`(포모도로 코어)와 `TaskStore.ts`(할일 관리)로 분리된 Zustand 스토어 아키텍처.
   2. **핵심 UI (JellyBar):** 글래스모피즘 기반 입체 알약 형태 구현 (`rgba` 0.45~0.55, `backdrop-filter: blur(18px) saturate(130%)`). 
@@ -30,6 +30,7 @@ github_commit: "3c9aea9"
   10. **일일 도파민 게이지 및 보상 로직 최적화:** 도파민 게이지의 우측 배치 및 시각 효과 강화. `TimerStore.ts`의 완료 점수를 기존 고정 10점에서 `기본 10점 + (설정 시간(분) × 2점)` 비례 보상 시스템으로 개편하여 사용자 성취감을 극대화.
   11. **스크롤바 버그 디버깅:** 최상위 컨테이너 `overflow-x: hidden` 적용 및 우측 통계 패널(`.stats-sidebar`) 내부 달력 요소의 미세한 너비 이탈을 추적하여 가로 스크롤바(슬라이드) 버그를 완전히 박멸.
   12. **스토리지 포트 및 어댑터 리팩토링 (Hexagonal):** 기존 Zustand `persist` (localStorage 강결합)를 제거하고 비동기 `IAppRepository` 포트 인터페이스를 정의. `@tauri-apps/plugin-store` 기반의 `TauriAppRepository` 어댑터로 구현하여 앱 상태(`AppStateEntity`)를 안전한 로컬 JSON 파일에 영속화하며, 외부 인프라 변경 시에도 도메인 로직을 보호하도록 아키텍처 고도화.
+  13. **반복 업무 자동화 및 미완료 뱃지 (Midnight Observer):** 자정 갱신 로직을 백그라운드 타이머(`setInterval`)와 `AppStateEntity.lastRecurringReset` 필드 기록으로 이중화하여 온/오프라인 환경을 완벽히 커버. 미완료된 반복 태스크가 존재할 경우 중복 생성을 막고, JellyBar 우측 상단에 펄스 애니메이션이 적용된 빨간색 `[🚨 미완료]` 뱃지를 추가하여 사용자에게 직관적 피드백 제공.
 
 ## ⚠️ 모순 및 업데이트 (Contradictions & RL Update)
 - **과거 데이터와의 충돌:** 
@@ -39,6 +40,7 @@ github_commit: "3c9aea9"
   1. **Glassmorphism 표준값 도출:** 굴절/반사를 위한 배경 불투명도(0.45~0.55), 블러(18px), 채도(130%), 테두리(1.5px solid rgba(255,255,255,0.6)) 공식화 🧠.
   2. **렌더링 의존성 분리:** 컴포넌트 렌더링 주기와 동적 속성(Color)을 분리하기 위해 철저한 `index` 또는 `hash` 기반의 고정 배정 알고리즘을 UI 표준으로 채택 🧠.
   3. **데이터 접근 계층 분리:** 모든 외부 스토리지(DB, File System)는 직접 호출하지 않고 '포트 인터페이스'를 통해 결합도를 낮추는 Hexagonal Architecture 패턴을 기본 적용 🧠.
+  4. **백그라운드 자동화 및 휴먼 에러 방어:** 사용자의 오프라인 접속 지연과 온라인 대기 상태를 모두 고려한 Midnight Observer 패턴 도입. 중복 태스크 생성으로 인한 UI 파편화를 막기 위해 상태 기반 방어 로직과 시각적 경고(미완료 뱃지) 결합 🧠.
 
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[TaskJelly_Project]]
