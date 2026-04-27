@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d8c4fcf203453f6b",
+        "id": "5b66fcadc395bd1d",
         "type": "tabs",
         "children": [
           {
-            "id": "f8e990543d9114cf",
+            "id": "eb4e4d5f520cc816",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,8 +176,10 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "f8e990543d9114cf",
+  "active": "eb4e4d5f520cc816",
   "lastOpenFiles": [
+    "10_Wiki/Troubleshooting/Agent_Errors/Agent_Script_Omission_Hallucination.md",
+    "20_Meta/Index.md",
     "10_Wiki/💡 Topics/YouTube_Algorithm_View_Cliff.md",
     "YegomCapture 버전업 및 기능 개선 내역.md",
     "10_Wiki/🛠️ Projects/YegomCapture_버전업_및_기능_개선_내역.md",
@@ -205,9 +207,7 @@
     "10_Wiki/🛠️ Projects/YegomCapture_Development_History.md",
     "temp.py",
     "00_Raw/로파이에이전트.md",
-    "10_Wiki/🤖 Agents/Lofi_Error_Troubleshooting.md",
     "10_Wiki/🤖 Agents",
-    "10_Wiki/🛠️ Projects/TaskJelly_Sound_Troubleshooting.md",
     "10_Wiki/Troubleshooting/Agent_Errors",
     "10_Wiki/Troubleshooting",
     "10_Wiki/System_Policy/Agent_Rules",
