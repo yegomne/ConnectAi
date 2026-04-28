@@ -34,4 +34,4 @@ github_commit: ""
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/💡 Topics]]
 - **Related:** [[TaskJelly_Development_History]], [[Productivity_Nudge_UI]]
-- **Raw Source:** [[00_Raw/2026-04-28/ADHD_ADD_INFP_Raw_Note]]
+- **Raw Source:** [[sehyun]]
