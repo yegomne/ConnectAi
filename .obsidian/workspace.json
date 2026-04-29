@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5b66fcadc395bd1d",
+        "id": "929ef963341bda65",
         "type": "tabs",
         "children": [
           {
-            "id": "eb4e4d5f520cc816",
+            "id": "bd9d440fbf61ad3f",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,8 +176,9 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "eb4e4d5f520cc816",
+  "active": "bd9d440fbf61ad3f",
   "lastOpenFiles": [
+    "00_Raw/TaskJelly_soundfix.md",
     "10_Wiki/💡 Topics/ADHD_ADD_INFP_Analysis.md",
     "10_Wiki/💡 Topics/High_Functioning_ADD_INFP_Analysis.md",
     "10_Wiki/⚖️ Decisions/Agent_Config_Traceability_Policy.md",
@@ -205,7 +206,6 @@
     "00_Raw/2026-04-25/Diary_Lofi_Agents.md",
     "00_Raw/2026-04-25",
     "10_Wiki/🛠️ Projects/Lofi_Moment_Architecture_Rules.md",
-    "10_Wiki/💡 Topics/NLP_with_Transformers.md",
     "temp.py",
     "10_Wiki/🤖 Agents",
     "10_Wiki/Troubleshooting/Agent_Errors",
