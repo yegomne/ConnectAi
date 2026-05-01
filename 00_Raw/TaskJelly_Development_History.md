@@ -137,5 +137,18 @@
   - 랜딩페이지 내에 '현재 프로그램 버전'을 명시하고, 버전 업데이트 시 일원화되어 연동되도록 구조 개선.
   - 랜딩페이지 내 플레이스홀더로 사용되던 이미지를 최종 완성된 '말랑한 아기 젤리' 캐릭터 이미지로 전면 교체 적용.
 
+## 19. 🏆 성취 창고 고도화 및 1.1.1 런칭 파이프라인 안정화 (Added & Fixed)
+- **성취 창고(Done Storage) 데이터 모델링 및 기능 분리 (Added)**:
+  - **이슈**: 기존에는 완료된 작업이 모두 '기억 창고(memory)'로 들어가 성취감을 주지 못하는 구조적 한계.
+  - **해결**: 완료된 작업을 `done` 상태로 독립시키고 `completedAt` 타임스탬프를 부여하도록 `TaskStore.ts` 및 `TimerStore.ts` 로직 리팩토링. 완료된 작업만 렌더링하는 `DoneStorageModal`을 신규 구축하여 심리적 보상 체계 완성.
+- **시각/인지 심리학 기반 UI 명도 및 애니메이션 개선 (Fixed)**:
+  - **기억 창고 텍스트 대비(Contrast) 버그**: 라이트/다크 모드 변수가 충돌해 텍스트가 보호색처럼 안 보이던 현상을 유연한 CSS 변수(`var(--text)`, `var(--glass-bg)`)로 통일하여 해결.
+  - **이중 스크롤바(Double Scrollbar) 제거**: `body`, `html`, `#root` 전역에 중복 적용된 `overflow-y: scroll`을 `html { overflow-y: auto; }` 단일 처리로 정리하여 우측 패널의 시각적 잡음 제거.
+  - **도파민 게이지 목표 렌더링 방식 수정**: `100 - 성취점수` 공식을 버리고 `0 -> 성취점수`로 직관적으로 차오르도록 애니메이션(react-spring) 로직을 개선하여 쾌감 극대화.
+- **Vercel DNS 에러 해결 및 1.1.1 릴리즈 파이프라인 (Configured)**:
+  - **404 DEPLOYMENT_NOT_FOUND 이슈**: Vercel 프로젝트에 `taskjelly.yegomne.com` 도메인이 매핑되지 않아 발생한 접속 장애를 Vercel CLI(`vercel domains add`)를 통해 즉각 매핑. (HTTPS 인증서 자동 발급 연동)
+  - **버전 꼬임(Version Mismatch) 현상 디버깅**: Vercel이 상위 폴더의 `tauri.conf.json`을 읽지 못해 `1.0.0`으로 표기되던 문제를 `landing-page/package.json`으로 기준점을 단순화(Lean)하여 해결.
+  - 프론트엔드 변경 사항을 반영하여 `npx tauri build`를 재실행하고 최종 버전을 `v1.1.1`로 펌핑 및 압축 배포 완료.
+
 ---
 *기록자: 통합 개발 시스템 (박상무, 유부장, 김대리, 이과장) | 마지막 수정일: 2026-05-01*
