@@ -3,46 +3,41 @@ id: TASKJELLY-DEV-HISTORY-1.0
 aliases: [TaskJelly 개발 히스토리, TaskJelly Glassmorphism, 젤리바 컴포넌트, 포모도로 상태관리]
 category: "[[10_Wiki/🛠️ Projects]]"
 confidence_score: 1.0
-tags: [project, taskjelly, react, zustand, glassmorphism, dnd-kit, typescript, troubleshooting, hexagonal-architecture, automation, ui-ux]
-last_reinforced: 2026-04-26
-github_commit: "3c9aea9"
+tags: [project, taskjelly, react, zustand, glassmorphism, dnd-kit, typescript, troubleshooting, hexagonal-architecture, automation, ui-ux, deployment]
+last_reinforced: 2026-05-01
+github_commit: "Pending"
 ---
 
 # [[TaskJelly 개발 히스토리 (v1.0 Glassmorphism)]]
 
-## 📌 한 줄 통찰 (The Karpathy Summary)
-> Vite+React 기반으로 Zustand 상태 관리, Glassmorphism UI, react-spring 애니메이션, 그리고 dnd-kit을 통합하여 시각적 타격감과 직관성을 극대화하고, 포트 앤 어댑터(Hexagonal) 패턴을 통해 영속적 파일 스토리지를 구축함과 동시에 반복 업무 자동화(Midnight Observer) 로직까지 완비한 TaskJelly 프로젝트의 A to Z 개발 기록.
+## 📌 한 줄 통찰 (Abstractive Summary)
+> 기존의 Hexagonal 아키텍처와 Glassmorphism UI 기반 위에, 상용화를 위한 도메인 연동(Vercel, Hosting.kr), 윈도우 백그라운드 트레이 지원, 듀얼 모드 위젯 및 잔디 그래프 레이아웃 최적화, 다운로드 방식(.zip) 개선 등 배포 및 사용자 경험(UX) 디테일을 완벽히 통합한 전체 개발 기록.
 
 ## 📖 구조화된 지식 (Synthesized Content)
-- **추출된 패턴:** 상태와 UI의 분리(Zustand), 데이터 접근 계층 추상화(포트 앤 어댑터), 백그라운드 자동화(Midnight Observer), 시각적 피드백(Pulse Badge), 렌더링 최적화(Index 기반 해싱), 물리 기반 UX(dnd-kit 충돌 제어), 도파민 기반 보상 피드백(비례 보상 및 레이아웃 개선), UI 테마 통일성(명도 대비), StatsWidget 고정 주간 뷰 UX 개선, 헤더 버튼 사이드바 통합 및 스크롤 디버깅.
-- **세부 내용:**
+- **추출된 패턴:** 상태와 UI의 분리(Zustand), 데이터 접근 계층 추상화(포트 앤 어댑터), 백그라운드 자동화(Midnight Observer, Window Tray), 시각적 피드백(Pulse Badge, Confetti), 렌더링 최적화(Index 기반 해싱), 물리 기반 UX(dnd-kit 충돌 제어), 도파민 기반 보상 피드백(비례 보상 및 잔디 그래프 실제 연동), UI 테마 통일성(명도 대비), 안정적인 배포(Vercel DNS, ZIP 패키징).
+- **세부 내용 (기존 아키텍처 및 핵심 로직):**
   1. **초기 셋업 및 코어 로직:** Vite React 환경에서 `TimerStore.ts`(포모도로 코어)와 `TaskStore.ts`(할일 관리)로 분리된 Zustand 스토어 아키텍처.
-  2. **핵심 UI (JellyBar):** 글래스모피즘 기반 입체 알약 형태 구현 (`rgba` 0.45~0.55, `backdrop-filter: blur(18px) saturate(130%)`). 
-  3. **인터랙션 및 UX 최적화:** 
-     - `@dnd-kit/core`로 드래그 앤 드롭 구현, `PointerSensor` `distance: 5`로 일반 클릭과 드래그 충돌 방지. 모바일 대응 `touch-action: none`.
-     - `index` 기반 순차 할당 해싱으로 알약 바 색상의 '플리커링' 및 중복 렌더링 방지.
-  4. **성취 보상 시스템 (Dopamine UX):** Task 완료 시 점수 누적, `@react-spring/web` 애니메이션 및 `canvas-confetti` 폭죽 파티클 발동.
-  5. **타입 안정성 (TypeScript):** Strict Mode 런타임 에러(`any` 타입, 모듈 import 충돌 등) 전면 디버깅 및 `import type` 적용으로 빌드 에러율 0% 달성.
-  6. **데이터 시각화 (StatsWidget):** 잔디 그래프를 롤링 방식에서 '이번 주(일-토)' 고정 보기로 변경하고 미래 날짜의 투명도(opacity: 0.4)를 낮춰 직관성 개선. 테마 일관성을 위한 폰트 및 중앙 정렬 레이아웃 고도화.
-  7. **레이아웃 및 접근성 개선:** `App.tsx` 최상단에 있던 액션 버튼('기억 창고', '퇴근')을 `StatsWidget.tsx` 하단으로 이동 및 Column 정렬하여 사이드바로 기능(통계/히스토리)을 통합하고 상단 헤더 여백 확보.
-  8. **도파민 게이지 자동화 및 잉여 점수 처리:** `lastGaugeReset` 상태를 도입하여 매일 오전 7시에 게이지를 자동 리셋하고, 100점 초과 시 보상 지급 후 잉여 점수만 렌더링되도록 `dailyGauge % 100` 연산 적용 및 persist 미들웨어에 연동.
-  9. **UI 가독성 및 테마 통일성:** `RecurringWidget` 내 하드코딩된 다크 테마 색상(흰 글씨/투명 박스)을 제거하고, 메인 폰트(`#334155`) 및 보조 폰트(`#64748b`)를 적용하여 밝은 글래스모피즘 테마와 대비를 맞춤 (`TaskInput.css` 팔레트 재사용).
-  10. **일일 도파민 게이지 및 보상 로직 최적화:** 도파민 게이지의 우측 배치 및 시각 효과 강화. `TimerStore.ts`의 완료 점수를 기존 고정 10점에서 `기본 10점 + (설정 시간(분) × 2점)` 비례 보상 시스템으로 개편하여 사용자 성취감을 극대화.
-  11. **스크롤바 버그 디버깅:** 최상위 컨테이너 `overflow-x: hidden` 적용 및 우측 통계 패널(`.stats-sidebar`) 내부 달력 요소의 미세한 너비 이탈을 추적하여 가로 스크롤바(슬라이드) 버그를 완전히 박멸.
-  12. **스토리지 포트 및 어댑터 리팩토링 (Hexagonal):** 기존 Zustand `persist` (localStorage 강결합)를 제거하고 비동기 `IAppRepository` 포트 인터페이스를 정의. `@tauri-apps/plugin-store` 기반의 `TauriAppRepository` 어댑터로 구현하여 앱 상태(`AppStateEntity`)를 안전한 로컬 JSON 파일에 영속화하며, 외부 인프라 변경 시에도 도메인 로직을 보호하도록 아키텍처 고도화.
-  13. **반복 업무 자동화 및 미완료 뱃지 (Midnight Observer):** 자정 갱신 로직을 백그라운드 타이머(`setInterval`)와 `AppStateEntity.lastRecurringReset` 필드 기록으로 이중화하여 온/오프라인 환경을 완벽히 커버. 미완료된 반복 태스크가 존재할 경우 중복 생성을 막고, JellyBar 우측 상단에 펄스 애니메이션이 적용된 빨간색 `[🚨 미완료]` 뱃지를 추가하여 사용자에게 직관적 피드백 제공.
+  2. **핵심 UI (JellyBar):** 글래스모피즘 기반 입체 알약 형태 구현 (`rgba` 0.45~0.55, `backdrop-filter: blur(18px) saturate(130%)`). index 기반 순차 할당 해싱으로 플리커링 방지.
+  3. **인터랙션 및 성취 보상:** `@dnd-kit/core`로 드래그 앤 드롭 구현, 포인터 클릭 충돌 제어. Task 완료 시 도파민 게이지 점수 누적, 폭죽 파티클 발동 및 비례 보상 시스템. 100점 초과 시 잉여 점수 렌더링 최적화.
+  4. **스토리지 포트 및 어댑터 리팩토링 (Hexagonal):** 기존 Zustand `persist`를 제거하고 `IAppRepository` 포트 정의 및 `TauriAppRepository` 어댑터 구현으로 도메인 로직 보호.
+  5. **반복 업무 자동화 (Midnight Observer):** 매일 오전 7시 도파민 게이지 리셋 및 반복 태스크의 백그라운드 미완료 뱃지 동기화 로직.
+- **세부 내용 (신규 배포 및 UI/UX 고도화):**
+  6. **대시보드 데이터 연동 및 레이아웃:** 도파민 잔디 그래프를 더미 데이터에서 실제 `dopamineHistory` 연동으로 변경하고 '오늘 심은 잔디 수' 추가. 우측 패널의 레이아웃을 Column으로 복구하여 시각적 밸런스 회복.
+  7. **시인성 및 안정성 강화:** Task Input 및 새마음 리셋 버튼의 글자 짤림 방지, 텍스트 넘침에 대한 ellipsis 처리. 다운로드 시 Mac OS 버튼 비활성화로 사용자 혼동 방지.
+  8. **배포 인프라 및 트레이 실행:** Vercel 프로덕션 배포 후 `taskjelly.yegomnne.com` (Hosting.kr) DNS 연결 완료. `.exe` 보안 경고 해결을 위해 `.zip` 포맷으로 다운로드 제공. 프로그램 종료 시 우측 상단 X 클릭 후에도 윈도우 시스템 트레이(Tray)에서 백그라운드 실행을 유지하여 작업 연속성 확보.
+
+## 💎 대체 불가능한 가치 (Unique Value & Expansion)
+- **개발부터 배포까지의 End-to-End 파이프라인:** 이 기록은 단순한 컴포넌트 개발기를 넘어, 로컬 앱(Tauri) 상태 관리의 Hexagonal 패턴 적용과 상용 배포(Vercel, 도메인), 윈도우 네이티브 트레이 기능까지 하나의 프로덕트가 완성되는 전체 사이클을 보여줍니다. 추후 다른 SaaS 프로젝트 생성 시, 본 문서의 스토리지 어댑터 구조와 Vercel-Hosting.kr 배포 파이프라인을 템플릿으로 재사용할 수 있습니다.
 
 ## ⚠️ 모순 및 업데이트 (Contradictions & RL Update)
 - **과거 데이터와의 충돌:** 
-  1. 초기 불투명도를 너무 높게 잡아 유리의 투과성이 죽는 문제, 랜덤 배정으로 인한 리렌더링 플리커링 등 시각적 피로도 유발 이슈 발견.
-  2. 동기식 `localStorage` 강결합으로 인해 데스크탑 앱(Tauri)으로 확장 시 데이터 유실 위험성 발생.
+  1. 기존 우측 패널 가로 배열 시도 -> 디자인 불균형 발생 -> 원래의 세로 형태로 원상복구(레이아웃 롤백).
+  2. `.exe` 다이렉트 다운로드 -> 크롬 보안 이슈 발생 -> `.zip` 패키징으로 변경.
 - **정책 변화:** 
-  1. **Glassmorphism 표준값 도출:** 굴절/반사를 위한 배경 불투명도(0.45~0.55), 블러(18px), 채도(130%), 테두리(1.5px solid rgba(255,255,255,0.6)) 공식화 🧠.
-  2. **렌더링 의존성 분리:** 컴포넌트 렌더링 주기와 동적 속성(Color)을 분리하기 위해 철저한 `index` 또는 `hash` 기반의 고정 배정 알고리즘을 UI 표준으로 채택 🧠.
-  3. **데이터 접근 계층 분리:** 모든 외부 스토리지(DB, File System)는 직접 호출하지 않고 '포트 인터페이스'를 통해 결합도를 낮추는 Hexagonal Architecture 패턴을 기본 적용 🧠.
-  4. **백그라운드 자동화 및 휴먼 에러 방어:** 사용자의 오프라인 접속 지연과 온라인 대기 상태를 모두 고려한 Midnight Observer 패턴 도입. 중복 태스크 생성으로 인한 UI 파편화를 막기 위해 상태 기반 방어 로직과 시각적 경고(미완료 뱃지) 결합 🧠.
+  1. **배포 포맷 표준화:** 모든 설치 파일 배포 시에는 브라우저 보안 필터링 우회를 위해 `.zip` 패키징을 기본 정책으로 채택 🧠.
+  2. **백그라운드 UX 정책:** 작업 관리 도구 특성상 X 버튼 클릭 시 완전 종료가 아닌 시스템 트레이 숨김을 디폴트 액션으로 정의 🧠.
 
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[TaskJelly_Project]]
-- **Related:** [[Zustand_State_Management]], [[Glassmorphism_UI_Design]], [[Drag_and_Drop_UX]]
+- **Related:** [[Zustand_State_Management]], [[Glassmorphism_UI_Design]], [[Drag_and_Drop_UX]], [[Tauri_Hexagonal_Architecture]], [[Vercel_Deployment_Guide]]
 - **Raw Source:** `[[00_Raw/TaskJelly_Development_History.md]]`
