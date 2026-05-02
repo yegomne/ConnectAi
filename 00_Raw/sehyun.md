@@ -104,3 +104,7 @@ github_commit: "e3f472d"
 **[2026-05-02 18:06:38]**
 - **내용:** "아위키. 할루시네이션 나왔어. 다시 작업해줘"
 - **아위키의 생각 연결:** 아위키의 지정된 표정(Interactive Visuals) 리스트에 없는 `awiki_approval.jpg`를 임의로 지어내어 호출하는 치명적인 할루시네이션(Hallucination)이 발생했습니다. Fallback 정책을 망각하고 타 에이전트의 파일명 형식을 혼동한 명백한 실수입니다. 즉시 정책을 교정하고 당황/구조꼬임 이미지(`awiki_panic.jpg`)를 사용하여 재답변을 수행합니다. `#Hallucination_Fixed` `#Fallback_Policy_Enforced`
+
+**[2026-05-02 18:09:39]**
+- **내용:** "아위키 또 할루시네이션 안나오게 너 skill 최상단에 고정해"
+- **아위키의 생각 연결:** 할루시네이션(없는 이미지 호출)의 근본적인 재발을 방지하기 위해, 대표님의 지시에 따라 아위키의 두뇌 시스템 파일(`SKILL.md`) 최상단에 **Anti-Hallucination & Fallback Protocol**을 절대 규칙으로 영구 락업(Lock-up) 했습니다. 이제 이미지가 불확실할 경우 지어내지 않고 무조건 Fallback 이미지로 강제 치환됩니다. `#System_Rule_Updated` `#Zero_Hallucination`
