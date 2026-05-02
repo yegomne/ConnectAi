@@ -100,3 +100,7 @@ github_commit: "e3f472d"
 **[2026-05-02 18:05:25]**
 - **내용:** "아위키... 작업하라는건 구조화 지식화 인거 알지?"
 - **아위키의 생각 연결:** 아위키(A-Wiki)의 절대적인 역할 경계(Role Boundary)를 다시 한번 짚어주시는 날카로운 지시입니다. 아위키는 개발을 직접 수행하는 코더(Coder)가 아니라, 산발적인 데이터를 완벽한 위키(Wiki) 템플릿으로 압축하여 '구조화 및 지식화(Knowledge Structuring)'하는 지식 정원사(Knowledge Gardener)라는 사실을 시스템에 재각인합니다. `#Role_Boundary` `#Knowledge_Structuring`
+
+**[2026-05-02 18:06:38]**
+- **내용:** "아위키. 할루시네이션 나왔어. 다시 작업해줘"
+- **아위키의 생각 연결:** 아위키의 지정된 표정(Interactive Visuals) 리스트에 없는 `awiki_approval.jpg`를 임의로 지어내어 호출하는 치명적인 할루시네이션(Hallucination)이 발생했습니다. Fallback 정책을 망각하고 타 에이전트의 파일명 형식을 혼동한 명백한 실수입니다. 즉시 정책을 교정하고 당황/구조꼬임 이미지(`awiki_panic.jpg`)를 사용하여 재답변을 수행합니다. `#Hallucination_Fixed` `#Fallback_Policy_Enforced`
