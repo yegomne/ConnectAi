@@ -26,9 +26,14 @@ github_commit: ""
     - `BatchManager` 클래스를 도입하여 에러(이미지 없음, 통신 실패 등) 시에도 중단 없이 로그만 남기고 릴레이 처리하는 무중단 큐(Queue) 완성.
     - 실시간 Progress Bar 진행률 노출 및 최종 완료 시 `pandas`를 이용한 결과 엑셀 일괄 내보내기 구현.
   - **API Rate Limit 방어 로직:** 무료 티어 Gemini API 사용 시 발생하는 429(Quota 초과) 에러 방지를 위해, `worker.py`에 에러 시 강제 종료를 막고 60초 대기 후 자동 재시도(최대 3회)하는 불굴의 쉴드(Retry) 로직 탑재.
+  - **썸네일 품질 트러블슈팅 (Rembg 튜닝 및 오토 패딩):**
+    - 기존 `u2net` 모델의 한계(파먹힘, 찌꺼기) 극복을 위해, 이커머스 특화 `isnet-general-use` 모델 세션 적용 및 Alpha Matting 활성화 옵션 제안.
+    - 누끼 처리된 이미지를 1000x1000 순백색 캔버스에 85% 크기로 중앙 정렬하는 Bounding Box 기반 Auto-Crop 및 스마트 패딩(Pillow) 파이프라인 구축 로직 추가.
+    - 복잡한 연출 컷을 대비한 '우회(Bypass) 옵션' 안전장치 UI 기획.
 - **🚀 향후 과제 (To-Do):**
+  - **상품 썸네일 고도화 및 후처리 파이프라인 적용 (최우선 과제):** 파이썬 코드(`worker.py`)에 제안된 `isnet-general-use` 엔진 교체 및 Pillow 오토 패딩 로직을 즉시 적용. 필요 시 BRIA `RMBG-1.4` 모델 도입 검토.
   - 신규 로직 및 디자인이 반영된 최종 버전(`domeggook_tool.exe`)의 PyInstaller 재빌드 및 GitHub Release 덮어쓰기.
-  - 대량 엑셀 데이터 장시간 동작 시 메모리 누수(Memory Leak) 모니터링.
+  - 대량 엑셀 데이터 장시간 동작 시 메모리 누수 여부 모니터링 (특히 `rembg` session 객체의 싱글톤(Singleton) 재사용 여부 점검).
 
 ## 💎 대체 불가능한 가치 (Unique Value & Expansion)
 - 단순한 반복 수작업이었던 상품 리스팅 소싱 과정을 완전 자동화 시스템으로 치환함으로써, 대표님의 귀중한 시간과 인지 자원(Time-cost & Cognitive load)을 오프-로딩(Off-loading)하고 스케일업에 집중할 수 있게 되었습니다.
@@ -41,4 +46,4 @@ github_commit: ""
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/🛠️ Projects/Projects_Index]]
 - **Related:** [[TaskJelly_Development_History]] (데스크톱 자동화 툴 및 UI 연동 패턴 공유)
-- **Raw Source:** [[00_Raw/domefast_history.md]]
+- **Raw Source:** [[00_Raw/domefast_history.md]], [[00_Raw/2026-05-02/domefast_thumbnail_troubleshooting_raw.md]]
