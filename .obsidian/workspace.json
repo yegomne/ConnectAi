@@ -11,10 +11,14 @@
             "id": "bd9d440fbf61ad3f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "00_Raw/sehyun.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sehyun"
             }
           }
         ]
@@ -178,6 +182,7 @@
   },
   "active": "bd9d440fbf61ad3f",
   "lastOpenFiles": [
+    "00_Raw/sehyun.md",
     "10_Wiki/💡 Topics/Agile_Methodology_and_Team_Size.md",
     "10_Wiki/🚀 Skills/Avengers_Team_Index.md",
     "10_Wiki/💡 Topics/Music_Shorts_Diary_Archive.md",
@@ -203,7 +208,6 @@
     "고객_서비스_자동화_전략.md",
     "10_Wiki/💡 Topics/AI_City_Builders_Transformer_Practical_Application.md",
     "콘텐츠_마케팅_파이프라인.md",
-    "00_Raw/sehyun.md",
     "Sehyun (대표님 생각 보관소).md",
     "00_Raw/2026-04-25",
     "temp.py",
