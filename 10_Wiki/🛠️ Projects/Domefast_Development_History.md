@@ -3,8 +3,8 @@ id: d8d3c59a-14d1-419b-b0b2-4d2a1b1837f4
 aliases: [도매패스트, Domefast, 도매꾹 자동화, 도매매 소싱 대시보드]
 category: "[[10_Wiki/🛠️ Projects/Domefast_Development_History]]"
 confidence_score: 1.0
-tags: [자동화, 크롤링, AI소싱, 쿠팡, 배치처리]
-entities: [TECH: Domefast, TECH: Gemini AI, TECH: rembg, TECH: Vercel, TECH: PyInstaller, ORG: 도매꾹]
+tags: [자동화, 크롤링, AI소싱, 쿠팡, 배치처리, 썸네일최적화]
+entities: [TECH: Domefast, TECH: Gemini AI, TECH: rembg, TECH: Vercel, TECH: PyInstaller, ORG: 도매꾹, TECH: Pillow, TECH: Lazy Singleton]
 last_reinforced: 2026-05-02
 github_commit: ""
 ---
@@ -26,14 +26,19 @@ github_commit: ""
     - `BatchManager` 클래스를 도입하여 에러(이미지 없음, 통신 실패 등) 시에도 중단 없이 로그만 남기고 릴레이 처리하는 무중단 큐(Queue) 완성.
     - 실시간 Progress Bar 진행률 노출 및 최종 완료 시 `pandas`를 이용한 결과 엑셀 일괄 내보내기 구현.
   - **API Rate Limit 방어 로직:** 무료 티어 Gemini API 사용 시 발생하는 429(Quota 초과) 에러 방지를 위해, `worker.py`에 에러 시 강제 종료를 막고 60초 대기 후 자동 재시도(최대 3회)하는 불굴의 쉴드(Retry) 로직 탑재.
-  - **썸네일 품질 트러블슈팅 (Rembg 튜닝 및 오토 패딩):**
-    - 기존 `u2net` 모델의 한계(파먹힘, 찌꺼기) 극복을 위해, 이커머스 특화 `isnet-general-use` 모델 세션 적용 및 Alpha Matting 활성화 옵션 제안.
-    - 누끼 처리된 이미지를 1000x1000 순백색 캔버스에 85% 크기로 중앙 정렬하는 Bounding Box 기반 Auto-Crop 및 스마트 패딩(Pillow) 파이프라인 구축 로직 추가.
-    - 복잡한 연출 컷을 대비한 '우회(Bypass) 옵션' 안전장치 UI 기획.
+  - **썸네일 품질 트러블슈팅 및 파이프라인 완성 (2026-05-02 완료):**
+    - **Rembg 엔진 고도화:** 이커머스 특화 `isnet-general-use` 모델 교체 및 `alpha_matting` 활성화로 외곽선 분리 품질 개선 (파먹힘, 찌꺼기 완화).
+    - **성능 최적화:** 앱 초기 로딩 지연 방지를 위해 `Lazy Singleton` 방식으로 `rembg session` 재사용 구조 적용.
+    - **스마트 패딩 (Auto-Crop & Resize):** 투명(Alpha) 채널 기준 Bounding Box 크롭 후, 1000x1000 순백색 캔버스에 최대 850px 비율로 중앙 정렬 합성(`Image.Resampling.LANCZOS`).
+    - **용량 및 예외 처리:** JPEG 포맷(`quality=95`) 변환으로 용량 최적화. 피사체가 모두 지워진 경우(`bbox None`) 대비 빈 이미지 저장 방지 로직 탑재.
+  - **엑셀 대량 처리(Batch) 안전성 및 우회(Bypass) UI 강화:**
+    - UI 상에 "AI 썸네일 최적화" vs "원본 이미지 유지" 라디오 버튼 옵션 추가하여 난해한 연출 컷 클레임 사전 차단.
+    - 원본(Original) 모드 시 투명 PNG/WebP 이미지가 검은 배경으로 깨지지 않도록 흰 바탕 변환 로직 추가.
+    - 엑셀 Batch 실행 시작 시점의 `process_mode`를 고정하고 옵션 변경을 비활성화하여, 릴레이 도중 앞뒤 상품 처리 혼선 방지.
+
 - **🚀 향후 과제 (To-Do):**
-  - **상품 썸네일 고도화 및 후처리 파이프라인 적용 (최우선 과제):** 파이썬 코드(`worker.py`)에 제안된 `isnet-general-use` 엔진 교체 및 Pillow 오토 패딩 로직을 즉시 적용. 필요 시 BRIA `RMBG-1.4` 모델 도입 검토.
-  - 신규 로직 및 디자인이 반영된 최종 버전(`domeggook_tool.exe`)의 PyInstaller 재빌드 및 GitHub Release 덮어쓰기.
-  - 대량 엑셀 데이터 장시간 동작 시 메모리 누수 여부 모니터링 (특히 `rembg` session 객체의 싱글톤(Singleton) 재사용 여부 점검).
+  - 신규 AI 썸네일 로직 및 우회 UI 디자인이 반영된 최종 버전(`domeggook_tool.exe`)의 PyInstaller 재빌드 및 GitHub Release 덮어쓰기.
+  - 대량 엑셀 데이터 장시간 동작 시 메모리 누수 여부 모니터링 (특히 `rembg` session 객체의 메모리 해제 상태 점검).
 
 ## 💎 대체 불가능한 가치 (Unique Value & Expansion)
 - 단순한 반복 수작업이었던 상품 리스팅 소싱 과정을 완전 자동화 시스템으로 치환함으로써, 대표님의 귀중한 시간과 인지 자원(Time-cost & Cognitive load)을 오프-로딩(Off-loading)하고 스케일업에 집중할 수 있게 되었습니다.

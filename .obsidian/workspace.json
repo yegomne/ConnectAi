@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1221ac12841f1861",
+        "id": "5f58388e7af15e66",
         "type": "tabs",
         "children": [
           {
-            "id": "4fb69540f49f0a2e",
+            "id": "d97c8a65ccf2d2eb",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,10 +176,10 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "4fb69540f49f0a2e",
+  "active": "d97c8a65ccf2d2eb",
   "lastOpenFiles": [
-    "10_Wiki/🛠️ Projects/Domefast_Development_History.md",
     "00_Raw/2026-05-02/domefast_thumbnail_troubleshooting_raw.md",
+    "10_Wiki/🛠️ Projects/Domefast_Development_History.md",
     "00_Raw/domefast_history.md",
     "00_Raw/sehyun.md",
     "Yegom_Personal_History.md",
