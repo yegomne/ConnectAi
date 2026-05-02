@@ -1,7 +1,7 @@
 ---
 id: c8d29312-d812-4f9e-a829-12847120a112
-aliases: [개인사, 가족관계, 예곰 프로필]
-category: "[[10_Wiki/💡 Topics/Yegom_Personal_History]]"
+aliases: [개인사, 가족관계, 세현 프로필]
+category: "[[10_Wiki/💡 Topics/Sehyun_Personal_History]]"
 confidence_score: 1.0
 tags: [개인정보, 가족, 프로필, 생애주기]
 entities: [PERSON: 할머니, PERSON: 아버지, PERSON: 어머니, PERSON: 여동생, PERSON: 아내, PERSON: 두 아들]
@@ -9,7 +9,7 @@ last_reinforced: 2026-05-02
 github_commit: ""
 ---
 
-# [[예곰 개인사 및 가족관계 (Yegom Personal History)]]
+# [[세현 개인사 및 가족관계 (Sehyun Personal History)]]
 
 ## 📌 한 줄 통찰 (Abstractive Summary)
 > 20대 후반까지 조손·양친·형제와 함께한 대가족 환경에서 자라, 현재는 아내와 두 아들을 둔 가장으로서 삶의 무게와 가족애를 깊이 이해하는 생애 주기를 거치고 있습니다.
