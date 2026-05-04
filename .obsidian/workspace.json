@@ -11,10 +11,14 @@
             "id": "d97c8a65ccf2d2eb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "10_Wiki/🛠️ Projects/Domefast_Development_History.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Domefast_Development_History"
             }
           }
         ]
@@ -178,6 +182,7 @@
   },
   "active": "d97c8a65ccf2d2eb",
   "lastOpenFiles": [
+    "Domefast 개발 히스토리 (Domefast Development History).md",
     "00_Raw/2026-05-02/domefast_thumbnail_troubleshooting_raw.md",
     "10_Wiki/🛠️ Projects/Domefast_Development_History.md",
     "00_Raw/domefast_history.md",
@@ -204,7 +209,6 @@
     "10_Wiki/⚖️ Decisions/단일_턴_룰과_자동_등판_모순_해결_트리거_방식.md",
     "00_Raw/2026-04-26/로파이_모먼트_단일턴_모순_대화록.md",
     "00_Raw/2026-04-26",
-    "이커머스_팬덤_구축기.md",
     "00_Raw/2026-04-25",
     "temp.py",
     "10_Wiki/🤖 Agents",
