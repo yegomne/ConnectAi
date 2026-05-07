@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "dome",
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.965556045656475,
-  "close": false
+  "scale": 0.25883865621813423,
+  "close": true
 }
