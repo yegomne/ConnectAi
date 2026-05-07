@@ -11,10 +11,14 @@
             "id": "d97c8a65ccf2d2eb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "10_Wiki/💡 Topics/Psychology/FOMO.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "FOMO"
             }
           }
         ]
@@ -178,6 +182,8 @@
   },
   "active": "d97c8a65ccf2d2eb",
   "lastOpenFiles": [
+    "10_Wiki/💡 Topics/Mindset/Self_Efficacy_and_Locus_of_Control.md",
+    "00_Raw/2026-05-07_Daily_Diary.md",
     "FOMO (Fear Of Missing Out).md",
     "00_Raw/로파이 에이전트 커버 이미지 및 규칙 위반 에러 분석.md",
     "심리학 (Psychology).md",
@@ -203,8 +209,6 @@
     "10_Wiki/💡 Topics/High_Functioning_ADD_INFP_Analysis.md",
     "10_Wiki/⚖️ Decisions/Agent_Config_Traceability_Policy.md",
     "10_Wiki/🤖 Agents/Seol_Gamsa_Profile.md",
-    "10_Wiki/🤖 Agents/Lofi_Agent_Master_Policy.md",
-    "10_Wiki/Troubleshooting/Agent_Errors/Agent_Script_Omission_Hallucination.md",
     "00_Raw/2026-04-26",
     "00_Raw/2026-04-25",
     "temp.py",
