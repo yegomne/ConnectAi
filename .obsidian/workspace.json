@@ -11,14 +11,10 @@
             "id": "d97c8a65ccf2d2eb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "유튜브 조회수 절벽 원인 및 알고리즘 분석.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "유튜브 조회수 절벽 원인 및 알고리즘 분석"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
         ]
@@ -182,6 +178,10 @@
   },
   "active": "d97c8a65ccf2d2eb",
   "lastOpenFiles": [
+    "FOMO (Fear Of Missing Out).md",
+    "00_Raw/로파이 에이전트 커버 이미지 및 규칙 위반 에러 분석.md",
+    "심리학 (Psychology).md",
+    "Domefast 개발 히스토리 (Domefast Development History).md",
     "유튜브 조회수 절벽 원인 및 알고리즘 분석.md",
     "사업과 투자의 딜레마 속 감정 관리.md",
     "10_Wiki/💡 Topics/Psychology/FOMO.md",
@@ -190,7 +190,6 @@
     "00_Raw/Nextengine_Development_History.md",
     "00_Raw/yegomcapturefix.md",
     "10_Wiki/🛠️ Projects/Domefast_Development_History.md",
-    "Domefast 개발 히스토리 (Domefast Development History).md",
     "00_Raw/2026-05-02/domefast_thumbnail_troubleshooting_raw.md",
     "00_Raw/domefast_history.md",
     "00_Raw/sehyun.md",
@@ -206,9 +205,6 @@
     "10_Wiki/🤖 Agents/Seol_Gamsa_Profile.md",
     "10_Wiki/🤖 Agents/Lofi_Agent_Master_Policy.md",
     "10_Wiki/Troubleshooting/Agent_Errors/Agent_Script_Omission_Hallucination.md",
-    "20_Meta/Index.md",
-    "10_Wiki/💡 Topics/YouTube_Algorithm_View_Cliff.md",
-    "YegomCapture 버전업 및 기능 개선 내역.md",
     "00_Raw/2026-04-26",
     "00_Raw/2026-04-25",
     "temp.py",
