@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "fomo",
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.9999999999998772,
+  "scale": 0.7132754626223511,
   "close": false
 }
