@@ -30,5 +30,5 @@ last_reinforced: 2026-05-20
 
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/💡 Topics/플랫폼 비즈니스 및 인프라 설계]]
-- **Related:** [[Nextjs 비동기 컴포넌트 최적화]], [[서버리스 콜드스타트 극복 패턴]], [[클라우드 스토리지 Egress 비용 절감 기법]], [[게임 수익화(Monetization) 심리학]]
+- **Related:** [[웹_게임_허브_플랫폼_구축_및_UXUI_설계]], [[Nextjs 비동기 컴포넌트 최적화]], [[서버리스 콜드스타트 극복 패턴]], [[클라우드 스토리지 Egress 비용 절감 기법]], [[게임 수익화(Monetization) 심리학]]
 - **Raw Source:** FlashTube 수익화 전략 및 기술 리스크 분석.pdf
