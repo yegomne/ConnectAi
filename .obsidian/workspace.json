@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5f58388e7af15e66",
+        "id": "1569ad02156d69c1",
         "type": "tabs",
         "children": [
           {
-            "id": "d97c8a65ccf2d2eb",
+            "id": "57531de1eda573ec",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,8 +176,9 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "d97c8a65ccf2d2eb",
+  "active": "57531de1eda573ec",
   "lastOpenFiles": [
+    "10_Wiki/👤 Sehyun/Diary/2026-05-25_대체공휴일의_회의와_부적합감.md",
     "00_Raw/2026-05-25/diary.md",
     "10_Wiki/🚀 Skills/마포_박사장_AI_에이전트_2단계_협업_프레임워크.md",
     "10_Wiki/👤 Sehyun/마포_박사장_인지_분석_및_5중_결합_시너지.md",
@@ -209,7 +210,6 @@
     "10_Wiki/🛠️ Projects/Domefast_Development_History.md",
     "00_Raw/2026-05-02/domefast_thumbnail_troubleshooting_raw.md",
     "00_Raw/domefast_history.md",
-    "00_Raw/sehyun.md",
     "00_Raw/2026-04-26",
     "00_Raw/2026-04-25",
     "temp.py",
