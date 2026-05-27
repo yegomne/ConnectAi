@@ -178,6 +178,12 @@
   },
   "active": "57531de1eda573ec",
   "lastOpenFiles": [
+    "VibeMeal/run_meal_planner.bat",
+    "VibeMeal/guro_meal_planner.py",
+    "VibeMeal/restaurants_db.json",
+    "VibeMeal",
+    "99_Archive/Raw_Backup/A-Wiki (v2.0) 완벽 자동화 및 핫폴더(temp) 구축 매뉴얼.md",
+    "99_Archive/Raw_Backup/VibeCoding_Project_Validation_Report.md",
     "10_Wiki/💡 Topics/비즈니스 모델 및 전략/바이브코딩_허브_린스타트업_로드맵.md",
     "10_Wiki/💡 Topics/비즈니스 모델 및 전략",
     "10_Wiki/💡 Topics/플랫폼 비즈니스 및 인프라 설계/바이브코딩_허브_핵심_리스크_검증.md",
@@ -207,12 +213,6 @@
     "심리학 (Psychology).md",
     "Domefast 개발 히스토리 (Domefast Development History).md",
     "유튜브 조회수 절벽 원인 및 알고리즘 분석.md",
-    "사업과 투자의 딜레마 속 감정 관리.md",
-    "10_Wiki/💡 Topics/Psychology",
-    "10_Wiki/💡 Topics/Mindset/Business_vs_Investment.md",
-    "00_Raw/Nextengine_Development_History.md",
-    "00_Raw/2026-04-26",
-    "00_Raw/2026-04-25",
-    "temp.py"
+    "10_Wiki/💡 Topics/Psychology"
   ]
 }
