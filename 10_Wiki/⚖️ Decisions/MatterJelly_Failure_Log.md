@@ -28,4 +28,4 @@ github_commit: "Pending"
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[의사결정 및 실패 기록]]
 - **Related:** [[MatterJS Constraints]], [[SVG Glassmorphism Optimization]], [[TaskJelly_Development_History]]
-- **Raw Source:** [[00_Raw/Jelly_Error_Log.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_Jelly_Error_Log.md]]

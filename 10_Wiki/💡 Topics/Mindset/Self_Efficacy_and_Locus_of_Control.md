@@ -31,4 +31,4 @@ github_commit: ""
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[마인드셋 (Mindset)]]
 - **Related:** [[10_Wiki/💡 Topics/Psychology/FOMO.md|FOMO]], [[10_Wiki/💡 Topics/Mindset/Business_vs_Investment.md|사업과 투자의 딜레마 속 감정 관리]]
-- **Raw Source:** `[[00_Raw/2026-05-07_Daily_Diary.md]]`
+- **Raw Source:** `[[99_Archive/Raw_Backup/[AWIKI_DONE]_2026-05-07_Daily_Diary.md]]`

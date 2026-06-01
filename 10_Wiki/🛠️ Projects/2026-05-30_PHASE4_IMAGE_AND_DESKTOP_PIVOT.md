@@ -386,4 +386,4 @@ IDE: 구글 안티그래비티 + Claude Code(터미널 claude). Claude Max.
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/🛠️ Projects/성인용품_등록_반자동화_개요.md]]
 - **Related:** [[성인용품_등록_반자동화_PHASE4_5_데스크탑_편집기]], [[2026-05-30_Streamlit_GUI_상세기록]]
-- **Raw Source:** [[00_Raw/2026-05-30/PHASE4_IMAGE_AND_DESKTOP_PIVOT.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/2026-05-30/[AWIKI_DONE]_PHASE4_IMAGE_AND_DESKTOP_PIVOT.md]]

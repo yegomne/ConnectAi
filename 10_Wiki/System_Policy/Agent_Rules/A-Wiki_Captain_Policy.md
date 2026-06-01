@@ -28,4 +28,4 @@ github_commit: "pending"
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/System_Policy/Agent_Rules]]
 - **Related:** [[Agent_Room_Management_Policy]], [[글로벌_규칙_오버라이드]]
-- **Raw Source:** [[00_Raw/A-Wiki_Captain_Policy.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_A-Wiki_Captain_Policy.md]]

@@ -26,4 +26,4 @@ github_commit: "Pending"
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[Troubleshooting]]
 - **Related:** [[Glassmorphism UI Error]], [[Design System Rules]], [[TaskJelly Work Log]]
-- **Raw Source:** [[00_Raw/taskjellyfix.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_taskjellyfix.md]]

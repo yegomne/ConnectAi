@@ -40,4 +40,4 @@ github_commit: "TBD"
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[🛠️ Projects]]
 - **Related:** [[UI_UX_디자인_심리학]], [[React_상태_관리_Zustand]]
-- **Raw Source:** [[00_Raw/TaskJelly_Development_History.md]], [[00_Raw/taskjellyfix.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_TaskJelly_Development_History.md]], [[99_Archive/Raw_Backup/[AWIKI_DONE]_taskjellyfix.md]]

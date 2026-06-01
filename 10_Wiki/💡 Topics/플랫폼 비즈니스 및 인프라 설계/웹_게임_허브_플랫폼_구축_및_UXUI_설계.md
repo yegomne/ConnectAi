@@ -47,4 +47,4 @@ github_commit: ""
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/💡 Topics/플랫폼 비즈니스 및 인프라 설계]]
 - **Related:** [[FlashTube_수익화_전략_및_기술_병목_해결_아키텍처]], [[게임 수익화(Monetization) 심리학]], [[서버리스 콜드스타트 극복 패턴]], [[클라우드 스토리지 Egress 비용 절감 기법]]
-- **Raw Source:** [[00_Raw/2026-05-21/플래쉬게임허브기획_원안.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/2026-05-21/[AWIKI_DONE]_플래쉬게임허브기획_원안.md]]

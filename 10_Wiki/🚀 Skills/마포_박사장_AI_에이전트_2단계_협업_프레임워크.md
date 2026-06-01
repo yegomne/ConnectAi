@@ -82,4 +82,4 @@ graph LR
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/🚀 Skills]]
 - **Related:** [[마포_박사장_프로필_및_기술_역량]], [[마포_박사장_자산_및_재무_현황]], [[마포_박사장_야망_영역_및_발산적_비즈니스_옵션]]
-- **Raw Source:** [[00_Raw/2026-05-25/페르소나적용-무.md]], [[00_Raw/2026-05-25/페르소나적용-유.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/2026-05-25/[AWIKI_DONE]_페르소나적용-무.md]], [[99_Archive/Raw_Backup/2026-05-25/[AWIKI_DONE]_페르소나적용-유.md]]

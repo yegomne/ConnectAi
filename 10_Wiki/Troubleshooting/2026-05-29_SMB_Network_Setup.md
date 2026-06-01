@@ -32,4 +32,4 @@ github_commit: ""
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/Troubleshooting]]
 - **Related:** [[시스템_자동화_및_파이프라인]], [[Ollama_인프라]]
-- **Raw Source:** [[99_Archive/Raw_Backup/2026-05-29_gemini-code-1780046319325.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_2026-05-29_gemini-code-1780046319325.md]]

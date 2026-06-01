@@ -33,4 +33,4 @@ github_commit: "1b928e7"
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/🛠️ Projects]]
 - **Related:** [[Lee-Gwajang_Deployment_Pipeline]], [[Python_Automation]]
-- **Raw Source:** `[[00_Raw/yegomcapturefix.md]]`
+- **Raw Source:** `[[99_Archive/Raw_Backup/[AWIKI_DONE]_yegomcapturefix.md]]`

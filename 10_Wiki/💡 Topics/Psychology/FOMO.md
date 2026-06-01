@@ -40,4 +40,4 @@ github_commit: ""
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[심리학 (Psychology)]], [[행동경제학 (Behavioral Economics)]]
 - **Related:** [[손실 회피 편향 (Loss Aversion)]], [[10_Wiki/💡 Topics/Mindset/Business_vs_Investment.md|사업과 투자의 딜레마 속 감정 관리]]
-- **Raw Source:** [[00_Raw/sehyun.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_sehyun.md]]

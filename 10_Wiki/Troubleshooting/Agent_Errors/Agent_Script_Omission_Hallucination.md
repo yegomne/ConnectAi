@@ -34,4 +34,4 @@ github_commit: "Pending"
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/Troubleshooting/Agent_Errors]]
 - **Related:** [[로파이: 에이전트 룰 무시 및 컨텍스트 망각 에러 분석]], [[10_Wiki/System_Policy/Agent_Rules/Agent_Room_Management_Policy]]
-- **Raw Source:** [[00_Raw/agent-error-fix Lo-fi Moment.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_agent-error-fix Lo-fi Moment.md]]

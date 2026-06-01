@@ -32,4 +32,4 @@ github_commit: "pending"
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/🛠️ Projects]]
 - **Related:** [[고객_서비스_자동화_전략]], [[YegomCapture Automated Release & Deployment Pipeline]]
-- **Raw Source:** [[00_Raw/2026-04-26/YegomCapture_업데이트_브리핑.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/2026-04-26/[AWIKI_DONE]_YegomCapture_업데이트_브리핑.md]]

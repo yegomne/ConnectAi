@@ -40,4 +40,4 @@ github_commit: "b51c206"
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[Lofi_Agent_Project]]
 - **Related:** [[LLM_Context_Window]], [[Prompt_Engineering_Architecture]]
-- **Raw Source:** `[[00_Raw/로파이-error.md]]`
+- **Raw Source:** `[[99_Archive/Raw_Backup/[AWIKI_DONE]_로파이-error.md]]`

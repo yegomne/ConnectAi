@@ -56,4 +56,4 @@ github_commit: ""
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/🛠️ Projects/Projects_Index]]
 - **Related:** [[TaskJelly_Development_History]] (데스크톱 자동화 툴 및 UI 연동 패턴 공유)
-- **Raw Source:** [[00_Raw/domefast_history.md]], [[00_Raw/2026-05-02/domefast_thumbnail_troubleshooting_raw.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_domefast_history.md]], [[99_Archive/Raw_Backup/2026-05-02/[AWIKI_DONE]_domefast_thumbnail_troubleshooting_raw.md]]

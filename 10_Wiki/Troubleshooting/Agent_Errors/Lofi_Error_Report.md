@@ -35,4 +35,4 @@ github_commit: "Pending"
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/Troubleshooting]]
 - **Related:** [[에이전트_권한_및_방관리_정책]], [[10_Wiki/System_Policy/Agent_Rules/Agent_Room_Management_Policy]]
-- **Raw Source:** [[00_Raw/로파이-error.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_로파이-error.md]]

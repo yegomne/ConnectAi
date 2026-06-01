@@ -41,4 +41,4 @@ github_commit: ""
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/💡 Topics/Connect_AI_Lectures]]
 - **Related:** [[10_Wiki/🚀 Skills/Avengers_Team_Index]], [[Two_Pizza_Team]], [[Project_Management]]
-- **Raw Source:** [[00_Raw/sehyun.md]] (실시간 입력 데이터)
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_sehyun.md]] (실시간 입력 데이터)

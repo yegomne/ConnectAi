@@ -29,4 +29,4 @@ github_commit: "Pending"
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/System_Policy]]
 - **Related:** [[1회성_명시적_호출_우선권]], [[로파이_운영_지침(LESSONS_LEARNED)]]
-- **Raw Source:** [[00_Raw/Agent_Room_Management_Policy.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_Agent_Room_Management_Policy.md]]

@@ -35,5 +35,5 @@ github_commit: "Pending"
 - **Related:** 
   - [[10_Wiki/💡 Topics/Life_Logging_and_Health.md]]
   - [[10_Wiki/⚖️ Decisions/Agent_Config_Traceability_Policy.md]]
-  - [[00_Raw/sehyun.md]]
+  - [[99_Archive/Raw_Backup/[AWIKI_DONE]_sehyun.md]]
 - **Raw Source:** 대표님 요청 ("난 고지능 adhd 야 그중 add... INFP 야") 및 글로벌 심리학/논문 웹 리서치

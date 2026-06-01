@@ -32,4 +32,4 @@ github_commit: ""
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/🛠️ Projects]]
 - **Related:** [[Local AI Architecture]], [[Ollama API Integration]], [[Windows Batch Automation]]
-- **Raw Source:** [[00_Raw/CoupangMMS_Development_History.md]]
+- **Raw Source:** [[99_Archive/Raw_Backup/[AWIKI_DONE]_CoupangMMS_Development_History.md]]
