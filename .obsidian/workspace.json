@@ -178,6 +178,10 @@
   },
   "active": "57531de1eda573ec",
   "lastOpenFiles": [
+    "99_Archive/Raw_Backup/[AWIKI_DONE]_RUNBOOK.md",
+    "temp/update_runbook.py",
+    "00_Raw/2026-05-24/Fixed_Expenses_Report.md",
+    "10_Wiki/⚖️ Decisions/Decisions_Index.md",
     "99_Archive/Raw_Backup/2026-06-01/[AWIKI_DONE]_PHASE4-5c_PRODUCTNAME_AND_COMPLETION.md",
     "99_Archive/Raw_Backup/2026-06-01/[AWIKI_DONE]_PHASE4-5c3_STALL_AND_LAUNCHER.md",
     "99_Archive/Raw_Backup/2026-06-01/[AWIKI_DONE]_PHASE4-5c2_TIMEOUT_CLEANUP.md",
@@ -191,7 +195,6 @@
     "99_Archive/Raw_Backup/[AWIKI_DONE]_VibeCoding_Project_Validation_Report.md",
     "99_Archive/Raw_Backup/[AWIKI_DONE]_RUNBOOK_20260530_v2.md",
     "99_Archive/Raw_Backup/[AWIKI_DONE]_RUNBOOK_20260530.md",
-    "99_Archive/Raw_Backup/[AWIKI_DONE]_RUNBOOK.md",
     "99_Archive/Raw_Backup/[AWIKI_DONE]_PROJECT_20260530_v2.md",
     "99_Archive/Raw_Backup/[AWIKI_DONE]_PROJECT_20260530.md",
     "99_Archive/Raw_Backup/[AWIKI_DONE]_PROJECT.md",
@@ -201,9 +204,6 @@
     "99_Archive/Raw_Backup/[AWIKI_DONE]_DECISIONS_20260530_v2.md",
     "99_Archive/Raw_Backup/[AWIKI_DONE]_DECISIONS_20260530.md",
     "99_Archive/Raw_Backup/[AWIKI_DONE]_DECISIONS.md",
-    "99_Archive/Raw_Backup/[AWIKI_DONE]_A-Wiki (v2.0) 완벽 자동화 및 핫폴더(temp) 구축 매뉴얼.md",
-    "99_Archive/Raw_Backup/[AWIKI_DONE]_2단계_FastAPI_서버화_상세기록_PHASE2_FASTAPI_20260530.md",
-    "99_Archive/Raw_Backup/[AWIKI_DONE]_2026-05-29_LESSONS_LEARNED.md",
     "99_Archive/Raw_Backup/2026-05-21",
     "temp/batch_archive_rename.py",
     "temp/update_pivot.py",
@@ -212,7 +212,6 @@
     "temp/archive_files.py",
     "temp/update_wiki.py",
     "99_Archive/Raw_Backup/2026-05-30",
-    "temp/process_wiki.py",
-    "temp/files.zip"
+    "temp/process_wiki.py"
   ]
 }
