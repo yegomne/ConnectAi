@@ -11,10 +11,14 @@
             "id": "57531de1eda573ec",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "99_Archive/Raw_Backup/2026-05-30/PHASE4_IMAGE_AND_DESKTOP_PIVOT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PHASE4_IMAGE_AND_DESKTOP_PIVOT"
             }
           }
         ]
@@ -178,6 +182,9 @@
   },
   "active": "57531de1eda573ec",
   "lastOpenFiles": [
+    "99_Archive/Raw_Backup/[AWIKI_DONE]_PHASE4-5c3_STALL_AND_LAUNCHER.md",
+    "99_Archive/Raw_Backup/2026-05-27/[AWIKI_DONE]_일기_더위와_모기.md",
+    "temp/rename_processed.py",
     "99_Archive/Raw_Backup/PHASE4-5c3_STALL_AND_LAUNCHER.md",
     "99_Archive/Raw_Backup/2026-05-27/일기_더위와_모기.md",
     "99_Archive/Raw_Backup/2026-05-27",
@@ -209,10 +216,7 @@
     "temp/2_📊_키워드_통계.py",
     "temp/1_📜_이력.py",
     "temp/excel_export.py",
-    "temp/storage.py",
     "99_Archive/Raw_Backup/RUNBOOK_20260530_v2.md",
-    "99_Archive/Raw_Backup/PROJECT_20260530_v2.md",
-    "10_Wiki/🛠️ Projects/2026-05-30_Streamlit_GUI_상세기록.md",
-    "99_Archive/Raw_Backup/PHASE2_FASTAPI_20260530_v2.md"
+    "99_Archive/Raw_Backup/PROJECT_20260530_v2.md"
   ]
 }
